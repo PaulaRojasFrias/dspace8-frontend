@@ -6132,6 +6132,11 @@
   // "publication.page.volume-title": "Volume Title",
   "publication.page.volume-title": "Título del volumen",
 
+  // agregados :
+  "publication.page.event": "Nombre del Evento/Revista/Carrera",
+  "publication.page.filiation": "Filiación Institucional",
+  "publication.page.version": "Versión del Resultado Científico",
+  
   // "publication.search.results.head": "Publication Search Results",
   "publication.search.results.head": "Resultados de la búsqueda de publicaciones",
 
