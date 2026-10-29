@@ -7,7 +7,21 @@ import { BuildConfig } from '../config/build-config.interface';
 
 export const environment: Partial<BuildConfig> = {
   production: false,
+  ui: {
+     ssl: false,
+     host: 'localhost', 
+     port: 4000,
+     nameSpace: '/',
+     useProxies: true
+   },
 
+   rest: {
+     ssl: true,
+     host: 'contabo-dspace.tail99bdd1.ts.net',
+     port: 443,
+     nameSpace: '/server'
+   },
+ 
   // Angular SSR (Server Side Rendering) settings
   ssr: {
     enabled: false,

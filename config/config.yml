@@ -1,5 +1,22 @@
+ui:
+  ssl: false
+  host: 0.0.0.0
+  port: 4000
+  nameSpace: /
+
 rest:
   ssl: true
-  host: sandbox.dspace.org
+  host: contabo-dspace.tail99bdd1.ts.net
   port: 443
   nameSpace: /server
+
+defaultLanguage: es
+
+languages:
+  - code: es
+    label: Español
+    active: true
+  - code: en
+    label: English
+    active: true
+

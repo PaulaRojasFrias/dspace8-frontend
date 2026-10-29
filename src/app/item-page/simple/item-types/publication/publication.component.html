@@ -47,7 +47,8 @@
       [fields]="['dc.publisher']"
       [label]="'publication.page.publisher'">
     </ds-generic-item-page-field>
-  </div>
+  </div> 
+
   <div class="col-xs-12 col-md-7">
     <ds-related-items
       [parentItem]="object"
@@ -65,25 +66,31 @@
       [label]="'relationships.isJournalIssueOf' | translate">
     </ds-related-items>
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
+    
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.description']"
       [label]="'publication.page.description'">
+    </ds-generic-item-page-field> 
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.relation.event']"
+      [label]="'publication.page.event'">
+      <span field-content>XV Jornadas de Ciencia y Tecnología UNCA 2026</span>
     </ds-generic-item-page-field>
 
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.subject']"
-      [separator]="', '"
-      [label]="'item.page.subject'">
+      [fields]="['dc.description.filiation']"
+      [label]="'publication.page.filiation'">
+      <span field-content>Universidad Nacional de Catamarca - Facultad de Tecnología y Ciencias Aplicadas</span>
     </ds-generic-item-page-field>
+
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.identifier.citation']"
-      [label]="'item.page.citation'">
+      [fields]="['dc.type.version']"
+      [label]="'publication.page.version'">
+      <span field-content>Versión Publicada (Final)</span>
     </ds-generic-item-page-field>
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['dc.identifier.uri']"
-      [label]="'item.page.uri'">
-    </ds-item-page-uri-field>
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
+    
     <ds-item-page-uri-field [item]="object"
       [fields]="['coar.notify.endorsedBy']"
       [label]="'item.page.endorsement'">
@@ -100,6 +107,7 @@
       [fields]="['datacite.relation.isReferencedBy']"
       [label]="'item.page.referenced'">
     </ds-item-page-uri-field>
+    
     <div>
       <a class="btn btn-outline-primary" role="button" [routerLink]="[itemPageRoute + '/full']" tabindex="0">
         <i class="fas fa-info-circle"></i> {{"item.page.link.full" | translate}}
